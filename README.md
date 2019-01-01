@@ -1,6 +1,9 @@
 # indecision
 > Nothing but another react app from a beginner
 
+## Netlify
+[https://indecision19.netlify.com/](https://indecision19.netlify.com/)
+
 ## Dev
 Make sure to have yarn installed before you begin.
 
