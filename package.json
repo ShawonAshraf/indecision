@@ -4,14 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn run build && yarn run serve",
-    "serve": "live-server public",
-    "build": "webpack --config webpack.config.js",
-    "dev": "webpack --config webpack.config.js --watch",
+    "start": "node server/server.js",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev": "webpack --watch",
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
-    "live-server": "^1.2.1",
+    "express": "^4.16.4",
     "normalize.css": "^8.0.1",
     "react": "^16.6.3",
     "react-dom": "^16.7.0",
@@ -25,6 +25,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "4.0.0-alpha.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",

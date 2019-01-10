@@ -12,6 +12,14 @@ Clone the repo on your machine, `cd` into the dir and then -
 ```bash
 yarn install
 
+# choose production or dev build
+# dev
+yarn run build:dev
+
+# production
+yarn run build:prod
+
+# start the express server
 yarn run start
 ```
 
